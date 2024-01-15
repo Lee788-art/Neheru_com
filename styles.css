@@ -1,0 +1,734 @@
+/* ! Base Rule */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+h2,
+h6,
+p {
+    text-transform: capitalize;
+    line-height: 1;
+    letter-spacing: 1.56px;
+}
+
+.container {
+    width: 142rem;
+    margin: 0 auto;
+    padding: 6rem 2.4rem;
+}
+
+/* ! Plug in */
+.custom-shape-divider-bottom-1703709197 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1703709197 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 81px;
+}
+
+.custom-shape-divider-bottom-1703709197 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* ! Theme */
+:root {
+    --landing-page-color: linear-gradient(to right, #1cd8d2, #93edc7);
+}
+
+/* ! Keyframes/Animations */
+/* * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+  */
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* * ----------------------------------------
+* animation vibrate-1
+* ---------------------------------------- */
+
+@-webkit-keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+/* * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+  */
+@-webkit-keyframes shake-horizontal {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes shake-horizontal {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
+
+/* ! Module */
+
+.heading-text {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+
+    & p {
+        font-size: 1.56rem;
+        line-height: 3;
+    }
+
+}
+
+/* ! State */
+.btn:hover {
+    cursor: pointer;
+    width: 60%;
+    background-color: #40DFEF;
+}
+
+.con:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;
+    scale: 1.1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* ! Layout */
+.grid {
+    display: grid;
+    gap: 60px;
+
+    & h3 {
+        font-size: 2rem;
+        margin: 2.4rem 0 1.2rem 0;
+    }
+
+    & p {
+        font-size: 1.56rem;
+        line-height: 1.56;
+    }
+}
+
+.grid-two--cols {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-three-cols {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 60px 0 0 50px;
+}
+
+.grid-four--cols {
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.grid-three--column {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-home--page .grid-two--cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 3rem;
+}
+
+/* ! Styles */
+/***** Nav Section *****/ 
+
+.nav-section {
+    width: 100%;
+
+    & ul {
+        display: flex;
+        gap: 20px;
+
+        & li {
+            list-style-type: none;
+            display: inline-block;
+            position: relative;
+
+            & a {
+                text-decoration: none;
+                font-size: 2rem;
+                font-weight: 300;
+                color: rgb(0, 28, 48);
+            }
+        }
+    }
+}
+
+.nav-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 1rem 0rem;
+
+    & .logo {
+        & img {
+            height: 40%;
+            width: 40%;
+        }
+    }
+}
+
+.nav-section ul li::before {
+    content: "";
+    color: rebeccapurple;
+    position: absolute;
+    border-bottom: 1.5px solid rgb(23, 107, 135);
+    width: 0%;
+    bottom: 0;
+    transition: all 0.3s;
+}
+
+.nav-section ul li:hover::before {
+    width: 100%;
+}
+
+ /***** End Nav Section *****/
+
+/***** landing Page Section *****/
+main {
+    background: linear-gradient(to right, #1cd8d2, #93edc7);
+    position: relative;
+}
+main .grid-two--cols{
+    width: 90%;
+    gap: 10rem;
+}
+
+.landing-first-box img {
+    width: 90%;
+    height: auto;
+}
+
+.landing-sec-box {
+    & h2 {
+        font-size: 5.6rem;
+        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+
+    & h6 {
+        font-weight: 300;
+        color: #0E185F;
+        font-size: 1.9rem;
+    }
+
+    & p {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 1rem 3.5rem;
+    width: 50%;
+    font-size: rem;
+    font-weight: 300;
+    transition: all 0.6s;
+    background-color: #28DF99;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    animation: vibrate-1 0.3s linear infinite both;
+}
+
+/***** End landing Page Section *****/
+
+/***** About Section *****/
+
+.grid-three-cols .box .icon img {
+    padding: 2.4rem;
+    width: 15rem;
+    background-color: rgba(28, 216, 210, 0.3);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+}
+
+.box {
+    height: 30rem;
+    width: auto;
+
+    &:hover {
+        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+    }
+}
+
+/***** End About Section *****/
+
+/***** courses Section *****/
+.courses .grid {
+    gap: 3.2rem;
+    margin: 100px 50px;
+}
+
+.fa-brands {
+    font-size: 3rem;
+    padding: 2rem;
+    background-color: rgba(28, 216, 210, 0.3);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.con {
+    height: 32rem;
+    width: auto;
+    overflow: hidden;
+    padding: 3.2rem;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.icon {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+}
+
+.con .icon:hover {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+h3 {
+    font-size: 1.56rem;
+    font-weight: 500;
+}
+
+.fa-html5 {
+    background-color: rgb(227, 100, 20);
+}
+
+.fa-css3 {
+    color: white;
+    background-color: rgb(73, 66, 228);
+}
+
+.fa-js {
+    background-color: rgb(242, 238, 157);
+
+}
+
+.fa-python {
+    color: blue;
+    background-color: white;
+}
+
+.fa-java {
+    border-radius: 50%;
+    background-color: rgb(238, 245, 255);
+}
+
+.fa-php {
+    border-radius: 50%;
+    background-color: rgb(21, 151, 187);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.fa-react {
+    border-radius: 50%;
+    color: cyan;
+    background-color: whitesmoke;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.fa-swift {
+    border-radius: 50%;
+    color: white;
+    background: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+.fa-angular {
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(255, 0, 77);
+}
+
+.fa-node {
+    border-radius: 50%;
+    background-color: rgb(101, 183, 65);
+}
+
+.fa-aws {
+    border-radius: 50%;
+    background-color: rgb(238, 114, 20);
+}
+
+/***** End courses Section *****/
+/***** Why choose Section *****/
+.grid-three--column {
+    margin: 10rem;
+}
+
+.grid-three--column .left--div {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.grid-three--column .middle--div img {
+    width: 100%;
+    position: relative;
+}
+
+.grid-three--column .why-choose-texts {
+    padding-bottom: 30px;
+}
+
+.grid-three--column .why-choose-texts .icon p {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(28, 216, 210, 0.3);
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+}
+
+/***** End Why choose Section *****/
+
+/***** contact Section *****/
+.contact-home--page {
+    height: 20vh;
+}
+
+.contact-home--page .grid-two--cols {
+    width: 60%;
+    height: 30rem;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    position: relative;
+    bottom: 7rem;
+
+}
+
+.contact-home--page img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-home--page .contact-sec-box {
+    font-size: 2.1rem;
+
+    & p {
+        font-size: 1.5rem;
+        line-height: 3;
+    }
+}
+
+.contact-home--page .contact-sec-box .butn {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 70%;
+    border: 1px solid;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: rgb(39, 158, 255);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    & i {
+        background-color: white;
+        padding: 0.8rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both infinite reverse;
+        -webkit-animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both infinite reverse;
+    }
+}
+
+/***** End contact Section *****/
+
+/***** FOOTER Section *****/
+
+
+footer {
+    background-color: #030637;
+    color: white;
+    padding-top: 10rem;
+}
+
+.grid-four--cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    font-size: 2rem;
+}
+
+.footer-1-div {
+    & .logo-brand {
+        font-size: 3rem;
+    }
+
+    & p {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+
+    & .social-footer-icon {
+        display: inline-block;
+
+        & i {
+            margin-top: 30px;
+            background-color: #f6f5f6;
+            /* color: rgb(78, 119, 216); */
+            display: inline-block;
+            font-size: 2rem;
+            padding: 1rem;
+            border: 1px solid;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+
+
+        }
+    }
+}
+
+footer .sub-heading {
+    font-size: 3rem;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.facebook i {
+    color: rgb(43, 23, 222);
+}
+
+.youtube i {
+    color: red;
+}
+
+.insta i {
+    color: rgb(171, 23, 157);
+}
+
+@media screen {
+    
+}
+/***** End FOOTER Section *****/
