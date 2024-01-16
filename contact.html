@@ -17,7 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .grid-two--cols {
-            width: 80%;
+            width: 100%;
             gap: 10rem;
         }
 
@@ -25,9 +25,37 @@
             width: 100%;
             height: auto;
         }
-        label{
+
+        label {
             font-size: 2.5rem;
+            display: block;
             text-transform: capitalize;
+        }
+
+        form .grid-two--cols {
+            gap: 2rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 1.4rem 2.4rem;
+        }
+
+        .btn-submit {
+            display: inline-block;
+            border-radius: 5px;
+            padding: 1rem 3.5rem;
+            width: 80%;
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-weight: 300;
+            transition: all 0.6s;
+            background-color: #28DF99;
+            cursor: pointer;
+            &:hover{
+                background-color: aqua;
+            }
         }
     </style>
 </head>
@@ -64,19 +92,34 @@
                 <div class="first-box">
                     <form action="#">
                         <div class="grid grid-two--cols">
-                            <div>
+                            <div class="user">
                                 <label for="username">user name</label>
-                                <input type="text" name="username" id="username" required autocomplete="off" placeholder="Enter your name">
+                                <input type="text" name="username" id="username" required autocomplete="off"
+                                    placeholder="Enter your name">
                             </div>
                             <div>
                                 <label for="email">Email</label>
-                                <input type="text" name="username" id="email" required autocomplete="off" placeholder="example@gmail.com">
+                                <input type="text" name="username" id="email" required autocomplete="off"
+                                    placeholder="example@gmail.com">
                             </div>
+                            <div class="mb-3">
+                                <label for="subject">subject</label>
+                                <input type="text" name="subject" id="subject" required autocomplete="off"
+                                    placeholder="your main title">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message">message</label>
+                                <textarea name="message id=" message cols="30" rows="10">enter your text</textarea>
+                            </div>
+                            <div><button type="submit" class="btn-submit">send message</button></div>
                         </div>
                     </form>
                 </div>
                 <div class="second-box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105713.39206738267!2d74.72435458743914!3d34.10683312964286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1855686e3c5ef%3A0x66244b7cc1e305c6!2sSrinagar!5e0!3m2!1sen!2sin!4v1705330236254!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105713.39206738267!2d74.72435458743914!3d34.10683312964286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1855686e3c5ef%3A0x66244b7cc1e305c6!2sSrinagar!5e0!3m2!1sen!2sin!4v1705330236254!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
